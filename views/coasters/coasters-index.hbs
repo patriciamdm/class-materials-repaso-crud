@@ -4,7 +4,14 @@
 
   <h1 style="font-weight: 100">Índice de montañas rusas</h1>
 
-  <hr>
+  {{#each allCoasters}}
+    <hr>
+    <a href="/coasters/{{id}}" class="btn btn-sm btn-dark">Ver detalles</a>
+    <h4>{{name}}</h4>
+    <p>{{description}}</p>
+    <small><strong>Longitud: </strong> {{length}}m | <strong>Inversiones: </strong> {{inversions}} | <strong>Parque: </strong> {{park.name}}</small>
+  {{/each}}
+  {{!-- <hr>
   <a href="#" class="btn btn-sm btn-dark">Ver detalles</a>
   <h4>Nombre de montaña rusa</h4>
   <p>Descripción de montaña rusa</p>
@@ -24,12 +31,7 @@
   <h4>Nombre de montaña rusa</h4>
   <p>Descripción de montaña rusa</p>
   <small><strong>Longitud: </strong> 000m | <strong>Inversiones: </strong> 0 | <strong>Parque: </strong> XXXXXX</small>
-  <hr>
-  <a href="#" class="btn btn-sm btn-dark">Ver detalles</a>
-  <h4>Nombre de montaña rusa</h4>
-  <p>Descripción de montaña rusa</p>
-  <small><strong>Longitud: </strong> 000m | <strong>Inversiones: </strong> 0 | <strong>Parque: </strong> XXXXXX</small>
-  <hr>
+  <hr> --}}
 
 
 

@@ -1,0 +1,14 @@
+<div class="container parks-index">
+
+    <a href="/parks/new" class="btn btn-dark">Crear nuevo parque</a>
+
+    <h1 style="font-weight: 100">Índice de parques</h1>
+
+    {{#each allParks}}
+    <hr>
+    <a href="/parks/{{id}}" class="btn btn-sm btn-dark">Ver detalles</a>
+    <h4>{{name}}</h4>
+    <p>{{description}}</p>
+    {{/each}}
+  
+</div>
